@@ -255,7 +255,7 @@
   top: 70%;
   color: white;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: .7rem;
+  font-size: .6rem;
 }
 
 .main__content__section__user__info {
@@ -546,7 +546,7 @@
   .footer__icons .copyright {
     width: 100%;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   .footer__icons .icons {
     width: 100%;
