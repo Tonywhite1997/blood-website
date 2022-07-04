@@ -121,6 +121,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 5em;
+    padding: 0;
   }
 }
 
