@@ -1,0 +1,103 @@
+@import "./variable";
+
+.header{
+    background-color: white;
+    height: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: 2px solid $primary-clr4;
+
+    .fa-solid{
+        display: none;
+    }
+
+    &__logo__div{
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        img{
+            height: 50px;
+            padding-left: 2em;
+        }
+
+        &__p{
+            font-size: 1.2rem;
+            margin-right: 1em;
+            font-weight: bold;
+            color: $primary-clr2;
+        }
+    }
+
+    &__nav{
+        height: 100%;
+
+        &__ul{
+            height: 100%;
+            display: flex;
+            gap: 1em;
+            list-style: none;
+            align-items: center;
+            padding-right: 2em;
+
+            li{
+                background-color: $primary-clr2;
+                color: white;
+                width: 9rem;
+                text-align: center;
+                padding: .8em .5em;
+                border-radius: 100vmax;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:700px){
+    .header{
+        position: relative;
+        transition: all 500ms ease-in;
+
+        .fa-solid{
+            display: block;
+            position: absolute;
+            right: 1em;
+            font-size: 2rem;
+            color: $dark-clr1;
+        }
+
+        .fa-bars{
+            display: block;
+            color: $primary-clr2;
+        }
+
+        .fa-xmark{
+            display: none;
+        }
+
+        &__nav{
+            position: absolute;
+            display: none;
+            height: 87vh;
+            width: 100%;
+            top: 14vh;
+            background-color: white;
+            z-index: 2;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            &__ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 5em;
+            }
+        }
+    }
+}
+
+

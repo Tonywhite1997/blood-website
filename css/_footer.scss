@@ -1,0 +1,135 @@
+@import "./variable";
+
+@mixin flex($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+.footer{
+    height: 30%;
+    background-color: $dark-clr1;
+    color: white;
+    @include flex(column);
+    justify-content: flex-start;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    &__heading{
+        width: 100%;
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: .5em;
+        margin-top: 1.5em;
+        text-align: center;
+    }
+
+    &__para{
+        margin-bottom: 2em;
+        font-size: 0.8rem;
+        text-align: center
+    }
+
+    .logo{
+        @include flex(row);
+        justify-content: center;
+        width: 100%;
+        gap: 1em;
+
+        p{
+            border: 1px solid white;
+            padding: .4em 1.2em;
+            border-radius: 100vmax;
+            @include flex(row);
+            gap: .5em;
+        }
+    }
+
+    &__icons{
+        width: 80%;
+        @include flex(row);
+        justify-content: space-between;
+        border-top: 1px solid gray;
+        margin-top: 4em;
+
+        .footer__icon{
+            margin-left: .5em;
+            @include flex(row);
+            justify-content: flex-start;
+            img{
+                width: 50px;
+            }
+        }
+
+        .icons{
+
+            i{
+                border: 1px solid red;
+                padding: .4em .4em;
+                border: 1px solid rgb(92, 91, 91);
+                border-radius: 100%;
+                font-size: .8rem;
+                margin-right: .5em;
+            }
+        }
+
+        .copyright{
+            font-size: .8rem;
+        }
+    }
+}
+
+@media screen and (max-width:700px){
+    .footer{
+
+        &__heading{
+            font-size: 1.3rem;
+        }
+
+        &__para{
+            width: 70%;
+        }
+
+        &__icons{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            gap: 1em;
+
+            i{
+                margin-bottom: 1em;
+            }
+
+            .footer__icon{
+                // border: 1px solid red;
+                width: 100%;
+                justify-content: center;
+    
+                img{
+                    width: 50px;
+                }
+    
+                p{
+                    font-size: 2rem;
+                }
+            }
+            .copyright{
+                width: 100%;
+                text-align: center;
+                font-size: 1.3rem;
+            }
+
+            .icons{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+                i{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
