@@ -24,7 +24,7 @@
         font-size: 1.5rem;
         @include flex(row);
         color: $primary-clr2;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: 'Poppins', sans-serif;
         margin-bottom: 2em;
 
         h3{
@@ -32,7 +32,7 @@
         }
 
         .slash{
-            font-size: 3rem;
+            font-size: 2rem;
         }
 
     }
@@ -46,8 +46,7 @@
 
         &__image{
             border: 1px solid white;
-            margin-top: 2em;
-            margin-bottom: 2em;
+            margin-bottom: 4em;
             position: relative;
             width: 100px;
             height: 100px;
@@ -72,10 +71,10 @@
                 position: absolute;
                 width: 100%;
                 top: 70%;
-                // left: 3%;
+                left: 5%;
                 color: rgb(255, 255, 255);
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                font-size: .6rem;
+                font-family: 'Poppins', sans-serif;
+                font-size: .5rem;
             }
         }
 
@@ -85,10 +84,15 @@
             border-radius: 10px;
             background-color: white;
             @include flex(column);
-            justify-content: center;
+            justify-content: flex-start;
+            margin-top: 2em;
             align-items: center;
-            font-size: 1rem;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: .8rem;
+            font-family: 'Poppins', sans-serif;
+
+            .about{
+                padding-top: 3rem;
+            }
 
             .styles{
                 width: 90%;
@@ -110,7 +114,7 @@
 
         &__buttons{
             width: 100%;
-            margin-top: 4em;
+            margin-top: 7em;
             @include flex(row);
             gap: 1em;
 
@@ -120,6 +124,7 @@
                 border: 1px solid $primary-clr3;
                 background-color: $primary-clr2;
                 color: white;
+                font-weight: 600;
             }
             &__cancel__button{
                 padding: .7em 3em;
@@ -127,6 +132,7 @@
                 border: 1px solid $primary-clr3;
                 background-color: white;
                 color: $primary-clr2;
+                font-weight: 600;
 
             }
         }

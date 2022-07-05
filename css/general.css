@@ -10,7 +10,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Poppins', sans-serif;
   border-bottom: 2px solid #FCC0BD;
 }
 
@@ -169,7 +169,7 @@
       -ms-flex-direction: row;
           flex-direction: row;
   color: #EB5757;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin-bottom: 2em;
 }
 
@@ -190,7 +190,7 @@
 }
 
 .main__hero__section .slash {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .main__content__section {
@@ -215,8 +215,7 @@
 
 .main__content__section__image {
   border: 1px solid white;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 4em;
   position: relative;
   width: 100px;
   height: 100px;
@@ -254,9 +253,10 @@
   position: absolute;
   width: 100%;
   top: 70%;
+  left: 5%;
   color: white;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: .6rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: .5rem;
 }
 
 .main__content__section__user__info {
@@ -277,10 +277,17 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 2em;
   align-items: center;
-  font-size: 1rem;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: .8rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main__content__section__user__info .about {
+  padding-top: 3rem;
 }
 
 .main__content__section__user__info .styles {
@@ -308,7 +315,7 @@
 
 .main__content__section__buttons {
   width: 100%;
-  margin-top: 4em;
+  margin-top: 7em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,6 +338,7 @@
   border: 1px solid #F1908C;
   background-color: #EB5757;
   color: white;
+  font-weight: 600;
 }
 
 .main__content__section__buttons__cancel__button {
@@ -339,6 +347,7 @@
   border: 1px solid #F1908C;
   background-color: white;
   color: #EB5757;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 1350px) {
@@ -376,7 +385,7 @@
 }
 
 .footer {
-  height: 30%;
+  height: 32%;
   background-color: #171616;
   color: white;
   display: -webkit-box;
@@ -395,20 +404,20 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .footer__heading {
   width: 100%;
   font-size: 1.5rem;
   font-weight: 400;
-  margin-bottom: .5em;
+  margin-bottom: 1em;
   margin-top: 1.5em;
   text-align: center;
 }
 
 .footer__para {
-  margin-bottom: 2em;
+  margin-bottom: 5em;
   font-size: 0.8rem;
   text-align: center;
 }
@@ -453,6 +462,7 @@
 }
 
 .footer__icons {
+  height: 40%;
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -519,7 +529,6 @@
     width: 70%;
   }
   .footer__icons {
-    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -527,7 +536,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 1em;
+    gap: 1.5em;
   }
   .footer__icons i {
     margin-bottom: 1em;
@@ -537,12 +546,14 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-left: 0;
+    margin-top: 1em;
   }
   .footer__icons .footer__icon img {
-    width: 50px;
+    width: 70px;
   }
   .footer__icons .footer__icon p {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   .footer__icons .copyright {
     width: 100%;
@@ -574,8 +585,9 @@
 }
 
 body {
-  height: 180vh;
+  height: 200vh;
   font-size: 16px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
 }
 /*# sourceMappingURL=general.css.map */
