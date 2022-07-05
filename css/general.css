@@ -1,6 +1,6 @@
 .header {
   background-color: white;
-  height: 8%;
+  min-height: 8%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -508,6 +508,10 @@
   width: 50px;
 }
 
+.footer__icons .icons {
+  margin-bottom: 1em;
+}
+
 .footer__icons .icons i {
   border: 1px solid red;
   padding: .4em .4em;
@@ -585,7 +589,7 @@
 }
 
 body {
-  height: 200vh;
+  height: 230vh;
   font-size: 16px;
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
