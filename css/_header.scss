@@ -2,7 +2,7 @@
 
 .header{
     background-color: white;
-    min-height: 8%;
+    min-height: 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,9 +80,9 @@
         &__nav{
             position: absolute;
             display: none;
-            height: 87vh;
+            height: 88vh;
             width: 100%;
-            top: 14vh;
+            top: 11vh;
             background-color: white;
             z-index: 2;
             justify-content: center;
